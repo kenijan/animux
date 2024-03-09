@@ -1,0 +1,187 @@
+/* line 1, /stdin */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, Baskerville, Georgia, serif;
+  transition: all 1s ease;
+}
+
+/* line 11, /stdin */
+body {
+  min-height: 100vh;
+  width: 100vw;
+  background: #141416;
+  position: relative;
+}
+
+/* line 18, /stdin */
+nav {
+  width: 100%;
+  height: 8vh;
+  background: #1c1f26;
+  display: flex;
+  position: fixed;
+  top: 0;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 999;
+}
+
+/* line 30, /stdin */
+nav header {
+  padding-left: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 4vh;
+  background: linear-gradient(to right, #00b8ff, #232428);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+/* line 41, /stdin */
+nav input {
+  height: 5vh;
+  width: 5vh;
+  background: transparent;
+  border: 2px #00b8ff solid;
+  color: #fff;
+  font-family: sans-serif;
+  margin-right: 10px;
+  border-radius: 50%;
+  transition: all 1s ease;
+  position: relative;
+  outline: none;
+  font: inherit;
+}
+
+/* line 56, /stdin */
+nav input:hover {
+  width: 30vw;
+  border-radius: 20px;
+  transition: all 1s ease;
+  padding-left: 10px;
+}
+
+/* line 63, /stdin */
+.container {
+  width: 100%;
+  min-height: 92vh;
+  background: transparent;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 10%;
+  margin: auto;
+  justify-content: center;
+  column-gap: 5px;
+}
+
+/* line 77, /stdin */
+.card {
+  background: #21242d;
+  width: 400px;
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  overflow: hidden;
+  margin: 10px;
+  box-shadow: 1px 1px 3px #1a1a1a, 2px 2px 4px #1e1e1e;
+  border-radius: 10px;
+}
+
+/* line 91, /stdin */
+img {
+  width: 50%;
+  height: 280px;
+  margin: 10px 0px 10px 5px;
+  border-radius: 20px 0px 0px 20px;
+}
+
+/* line 98, /stdin */
+.card .details {
+  width: 50%;
+  height: 280px;
+  display: flex;
+  background: transparent;
+  margin: 10px 5px 10px 0px;
+  text-align: center;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0px 20px 20px 0px;
+}
+
+/* line 111, /stdin */
+.details .movie-title {
+  font-size: 23px;
+  font-weight: bold;
+  padding-top: 5px;
+  color: #d3cece;
+  text-shadow: 1px 1px 3px #5d5d5d, 2px 2px 4px #5d5d5db5;
+}
+
+/* line 120, /stdin */
+.details .movie-description {
+  background: transparent;
+  text-align: left;
+  margin-top: 10px;
+  width: 90%;
+  height: 70%;
+  overflow: scroll;
+}
+
+/* line 129, /stdin */
+.movie-description .rate,
+.movie-description .releaseyear,
+.movie-description .language,
+.movie-description .genres,
+.movie-description .synopsis {
+  color: #e2e2e2ef;
+  word-spacing: 5px;
+  padding-top: 5px;
+  margin-left: 5px;
+  padding-bottom: 5px;
+}
+
+/* line 141, /stdin */
+.download-button:visited {
+  border: none;
+  color: #941;
+}
+
+/* line 146, /stdin */
+.synopsis {
+  font-family: sans-serif;
+  color: #d0d0d0f1;
+}
+
+/* line 151, /stdin */
+.details .download-button {
+  color: #ebe5e5b5;
+  display: block;
+  font-size: 20px;
+  background: transparent;
+  font-family: sans-serif;
+  padding: 2px;
+  margin-left: 5px;
+  border: 1px solid #00b8ff;
+  border-radius: 5px;
+  width: 90%;
+  height: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 1.5s linear;
+}
+
+/* line 168, /stdin */
+.download-button:hover {
+  background: #00b8ff;
+  border: none;
+  color: #fafafaf4;
+}
